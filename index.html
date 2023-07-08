@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <title>Sudarshan</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
-
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
@@ -26,12 +29,32 @@
               <li class="links"><a href="#home">Home</a></li>
               <li class="links"><a href="#about">About</a></li>
               <!-- <li class="links"><a href="#resume">Resume</a></li> -->
-              <li class="links"><a href="#portfolio">Portfolio</a></li>
+              <li class="links"><a href="#project">Projects</a></li>
               <!-- <li class="links"><a href="#blog">Blog</a></li> -->
               <li class="links"><a href="#contact">Contact</a></li>
             </ul>
+            <div class="eeeeee">
+              <a href="javascript:void(0);" class="icon icone" onclick="toggleMenu()">
+              <i class="fas fa-bars"></i>
+            </a>    
+          </div>
+  
             <!-- <button class="contact">Contact</button> -->
           </div>
+          <script>
+            function toggleMenu() {
+              var navLinks = document.querySelector('.nav-links');
+              navLinks.classList.toggle('show');
+          //     var linkDiv = document.querySelector('.link_div');
+          //     var backgroundColor = window.getComputedStyle(linkDiv).getPropertyValue('background-color');
+          //     if (backgroundColor === 'rgb(51, 51, 51)' || backgroundColor === '#333') {
+          //     linkDiv.style.backgroundColor = '#333';
+          //   } else {
+          //     linkDiv.style.backgroundColor = '#000';
+          //   }
+            }
+                 
+          </script>
         </nav>
       </div>
     <section class="container">
@@ -101,7 +124,6 @@
           </div>  
           </div>
         </address>
-        <button class="button">Download CV</button>
       </div>
       </div>
       </div>
@@ -143,47 +165,7 @@
 </div>
 
 </div>
-    <section class="sections sec_prot">
-      <!-- <div class="main_card_w">
-      <div class="portfolio_wrapper" data-aos="fade-down"
-      data-aos-easing="linear"
-      data-aos-duration="1000">
-        <span style="font-size: 18px;">Some of my <span style="font-weight: bold;">Projects</span></span>
-        <br>
-        <span style="font-size: 14px; opacity: 57%;">Discover More Projects in my Github</span>
-        <br>
-        <button class="btn"><a href="https://www.github.com/gtmsudarshan" target="_blank">Github</a></button>
-      </div>
-      <div class="main_card_container">   
-        <article class="card" data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom" data-aos-duration="300">
-          <header class="card-header">
-            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-          </header>
-          <div class="card-info">
-            empty
-          </div>
-        </article>
-        <article class="card" data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom" data-aos-duration="600">
-          <header class="card-header">
-            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-          </header>
-          <div class="card-info">
-            empty
-          </div>
-        </article>
-        <article class="card" data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom" data-aos-duration="900">
-          <header class="card-header">
-            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-          </header>
-          <div class="card-info">
-            empty
-            </div>
-          </div>
-        </article>
-    </div> -->
+    <section class="sec_prot" id="project">
     <div class="main_card_container">
       <article class="card" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="300">
         <header class="card-header">
@@ -220,10 +202,91 @@
       </article>
     </div>
     </section>
-    <section class="sections">
-      <h1>Section 4</h1>   
+    <section class="contact_section" id="contact">
+      <li style="list-style:circle; font-family: 'sora';">Contact</li>
+      <div class="contact_wrapper">
+        <div class="contact_t1">
+        <h1 style="font-size: 23px; font-family: 'Sora', sans-serif; font-weight: Medium 500;">
+          Let's create a website that showcases your brand's brilliance!
+        </h1>
+        <div style="margin-top: 4px;">
+          <button class="btn contact_btn">
+            <span class="text">Let's Talk</span>
+        </button>
+        </div>
+      </div>
+
+        <div class="contact_t2">
+          <p style="font-size: 20px; font-weight: ExtraLight 200; font-family: 'Sora', sans-serif;">
+            I assist my clients in achieving success by crafting brand identities,
+             digital experiences, and printed materials that effectively convey
+              messages, accomplish marketing objectives, and exude visual excellence.
+          </p>
+        </div>
+      </div>
+        <div>
+          <div class="left_wrapper_contact">
+            <h2>
+              Let's get in
+              touch with us.
+            </h2>
+            <span>If you would like to collaborate, I would be delighted to do so.</span>
+          </div>
+          <div class="right_wrapper_contact">
+            <div class="containerdiv">
+              <form method="POST" action="/index.php">
+                <div class="form_name">
+                  <div>
+                    <label for="form_name">Full Name</label>
+                    <br>
+                    <input id="form_name" type="text" name="name" placeholder="Full Name" required>
+                  </div>
+                  <div class="form_email">
+                    <label for="form_email">Email</label>
+                    <br>
+                    <input id="form_email" type="email" name="email" placeholder="Email" required>
+                  </div>
+                </div>
+                <div class="form_subject">
+                  <label for="form_subject">Subject</label>
+                  <br>
+                  <input id="form_subject" type="text" name="subject" placeholder="Subject">
+                </div>
+                <div class="form_message">
+                  <label for="input_form_message" >Message</label>
+                  <br>
+                  <input id="input_form_message" type="text" name="message" placeholder="Message">
+                </div>
+                <div class="contact_me">
+                  <button type="submit" class="contact_btn">Contact Me</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          </div>
+        </div>
     </section>
   </div>
+  <script>
+    document.getElementById("contact-btn").addEventListener("click", function(event) {
+      event.preventDefault(); // Prevent the form from submitting traditionally
+
+      var form = document.getElementById("contact-form");
+      var formData = new FormData(form);
+
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", "send_email.php");
+      xhr.onload = function() {
+        if (xhr.status === 200) {
+          document.getElementById("success-message").textContent = xhr.responseText;
+          form.reset();
+        } else {
+          document.getElementById("failure-message").textContent = "Oops! Something went wrong. Please try again later.";
+        }
+      };
+      xhr.send(formData);
+    });
+  </script>
     <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
       <script>
@@ -343,7 +406,5 @@ let main_center =document.querySelectorAll(".main_center");
     }
   );
  </script>  
-
-      
 </body>
 </html>
