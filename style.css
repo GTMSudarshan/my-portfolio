@@ -62,7 +62,7 @@ form input{
 }
 /* Responsiviness */
 
-@media only screen and (min-device-width: 300px) and (max-device-width: 480px) {
+/* @media only screen and (min-device-width: 300px) and (max-device-width: 480px) {
   .icon {
     display: block;
   }
@@ -133,7 +133,7 @@ form input{
   .nav-links li {
     padding: 10px 20px;
   }
-}
+} */
 @media only screen and (min-width: 1000px) {
   .show{
     opacity: 1;
