@@ -1,4 +1,4 @@
-/*Animation*/
+/* Animation */
 document.addEventListener("DOMContentLoaded", function(event) {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
